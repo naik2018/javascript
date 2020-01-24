@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            objects-DOM-input
+        </title>
+    </head>
+        <script type="text/javascript">
+            var Car={
+                car_brand : "maruti",
+                car_color : "blue",
+                car_price : 400000,
+           
+                cardetails : function()
+                {
+                    document.write("<h3>My favourite Car</h3>");
+                }
+            }
+            Car.cardetails();
+            document.write("<h4>Brand="+Car.car_brand+"</h4>")
+            document.write("<h4 ><font color='blue'>"+"Color="+Car.car_color+"</font></h4>")
+            document.write("<h4>Price="+Car.car_price+"</h4>")
+
+            function Cars(carbrand,carmodel,price)
+            {
+                this.carbrand=carbrand;
+                this.carmodel=carmodel;
+                this.price=price;
+                this.details=function()
+                {
+                    document.write("<h2>This is my price of car:"+price)
+                }
+            }
+
+            var o1=new Cars("maruti","model x",450000);
+            var o2=new Cars("tata","model p",360000);
+            o1.details();
+            o2.details();
+        </script>
+    <body>
+    </body>
+</html>

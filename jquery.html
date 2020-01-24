@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>My J-query</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2 id="heading1">Hello JQuery</h2><br>
+        <button onclick="fun1()" id="btn1">Click Here</button><br>
+        <h2 id="heading2">My selectors</h2><br>
+        <button onclick="fun2()" id="btn2">Click Here</button>
+    </body>
+    <script src="jquery.js"></script>
+    <script>
+    function fun1()
+    {
+        $("#heading1").fadeToggle(2000);
+    }
+    function fun2()
+    {
+        $("#heading2").fadeToggle(2000);
+    }
+
+    
+    </script>
+</html>

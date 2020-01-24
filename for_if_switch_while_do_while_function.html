@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            basic_java_script
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var x=10
+            for(var i=1;i<=x;i++)
+            {
+                if(i%2==0)
+                {
+                    document.write("<h4>number"+i)
+                }
+            }
+            while(x>0)
+            {
+                document.write("<h3>"+x)
+                x--;
+            }
+            var x='surat'   //dynamically typed language
+            switch(x)
+            {
+                case "baroda":
+                document.write("<h5>baroda city</h5>")
+                break;
+
+                case "surat":
+                document.write("<h5>surat city</h5>")
+                break;
+            }
+            var x=5
+            do
+            {
+                document.write("<h5>hello"+x)
+                x--;
+            }while(x>0)
+
+            function myaddition(a, b)
+            {
+                return "<h3>"+a+" "+b;
+            }
+
+            var y=myaddition("hello","javascript")
+            document.write(y)
+        </script>
+    </body>
+</html>
